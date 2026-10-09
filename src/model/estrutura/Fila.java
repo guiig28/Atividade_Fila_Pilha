@@ -3,6 +3,10 @@ package model.estrutura;
 public class Fila<T> {
     private NoDuplo<T> inicio;
 
+    public Fila() {
+        this.inicio = null;
+    }
+
     private NoDuplo<T> last() {
         if (this.inicio == null)
             throw new IllegalStateException("Nao existe elemento na fila.");
